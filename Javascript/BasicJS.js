@@ -67,7 +67,7 @@ console.log(nullObj === nullObj2)
 // Storing Values with the Assignment Operator
 // ES-5 : Year 2011
 
-var num; //  Variable Declaration  !important
+// var num; //  Variable Declaration  !important
 console.log(num)
 var Number = 5 // variable Declaration and initialisation  !important
 console.log(Number);
