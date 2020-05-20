@@ -1,0 +1,13 @@
+/* GIT */
+
+What is git?
+git is version control tool.
+
+what is version control tool?
+version control tool manages the changes in computer programs.
+
+who developed git ?
+Git was created by Linus Torvalds in 2005.
+
+Why should we use git?
+To version control and manage the changes in computer programs.
