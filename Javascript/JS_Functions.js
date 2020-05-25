@@ -71,7 +71,6 @@ var obj = {
 argumentFunction(obj)
 
 //  Global Scope and Functions
-
 var global = 'COVID-19'
 console.log(global)
 
