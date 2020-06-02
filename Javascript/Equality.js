@@ -124,6 +124,145 @@ if (1 == true) {
   console.log(1  == 'true')
   
   
+
+
+
+
+// Logical Operator in Javascript
+// It is used in Conditional Check 
+// 1. AND Operator &&.
+if (true && 1) {
+  console.log('Reached')
+}
+// 2. OR Operator ||.
+if (true || 2) {
+  console.log('Reached')
+}
+
+if ((true || 2) && (true || 3 )) {
+  console.log('Reached')
+}
+
+if ((true && 2) || (true || 1 )) {
+  console.log('Reached')
+}
+
+
+// Else statement.
+var elseCheck;
+// !! - cast to boolean
+// + - cast to integer
+console.log(typeof(!elseCheck))
+if (!elseCheck) {
+  console.log('This line of code is condition is true')
+} else {
+  console.log('This line of code is condition is false')
+}
+
+
+
+// JSON 
+
+let stringObj = {
+  name : 'ashutosh',
+  mode : 'angry'
+}
+
+// JSON is a lightweight, text-based, language-independent data interchange format.
+console.log(stringObj);
+console.log(stringObj)
+// api call , we convert to Javascript object to JSON.(Javascript Object Notation.)
+stringObj = JSON.stringify(stringObj);
+console.log(stringObj);
+// after api call response will come in JSON, JSONP;
+stringObj = JSON.parse(stringObj);
+console.log(stringObj);
+
+
+
+var nullCheck = null;
+var syso = {}
+if (syso && Object.keys(syso).length) {
+  console.log('This line of code is condition is true')
+} else {
+  // console.log('This line of code is condition is false')
+}
+
+// we did a api call;
+ dataJson = {
+  "name": {
+    firstName: 'Ashutosh',
+    lastName: 'Chaudhary'
+  }
+ }
+
+ console.log(Object.keys(dataJson.name));
+ console.log(Object.entries(dataJson.name));
+ console.log(Object.values(dataJson.name));
+
+dataJson = JSON.stringify(dataJson);
+dataJson = JSON.parse(dataJson);
+  if (dataJson.name && Object.keys(dataJson.name).length && dataJson.name.hasOwnProperty('firstName')) {
+  // if (dataJson.name && dataJson.name.hasOwnProperty('firstName')) {
+  console.log(`This line of code is condition is true ${dataJson.name.firstName}`)
+} else {
+  console.log('This line of code is condition is false')
+}
+
+// Else If 
+
+// If is single conditional statement check.
+// Else if is used for multiple conditional Check.
+
+var currentDate = new Date();
+console.log(currentDate);
+var hours = currentDate.getHours();
+console.log(currentDate.getHours());
+if (hours < 12) {
+  console.log('Guten Morgen!!')
+} else if(hours>= 12 && hours < 17) {
+  console.log('Good Afternoon!!')
+} else {
+  console.log('Good Night!!')
+}
+
+
+function foo(x) {
+  if (x < 1) {
+    return "Less than one";
+  } else if (x < 2) {
+    return "Less than two";
+  } else {
+    return "Greater than or equal to two";
+  }
+}
+
+function bar(x) {
+  if (x < 2) {
+    return "Less than two";
+  } else if (x < 1) {
+    return "Less than one";
+  } else {
+    return "Greater than or equal to two";
+  }
+}
+console.log(bar(1))
+
+console.log(foo(0.9))
+
+console.log(1-'1');
+
+var a = '1'
+// console.log(1-(--a));
+console.log(1-(a--));
+console.log(a)
+
+var currentHour = new Date();
+console.log(typeof(currentHour));
+
+
+
+
   
   
   
